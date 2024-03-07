@@ -69,5 +69,14 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+    /**
+     * This returns a list of cities
+     * @return
+     * Return the list
+     */
+    public List<City> getCities() {
+        return this.cities;
+    }
+
 
 }
