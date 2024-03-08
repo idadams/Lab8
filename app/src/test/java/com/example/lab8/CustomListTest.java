@@ -53,6 +53,8 @@ public class CustomListTest {
         City city = new City("Charlottetown", "Prince Edward Island");
         list.addCity(city);
         assertEquals(list.getCount(),1);
+        list.deleteCity(city);
+        assertEquals(list.getCount(), 0);
         
         
     }
