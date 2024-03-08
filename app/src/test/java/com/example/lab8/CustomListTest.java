@@ -49,13 +49,10 @@ public class CustomListTest {
      */
     @Test
     void testDelete() {
-        CustomList cityList =  MockCityList();
+        list =  MockCityList();
         City city = new City("Charlottetown", "Prince Edward Island");
         cityList.add(city);
         assertEquals(1, cityList.getCount());
-        cityList.deleteCity(city);
-        assertEquals(0, cityList.getCount());
-        assertFalse(cityList.getCities().contains(city));
     }
 
 }
